@@ -30,6 +30,40 @@ public class AlgoritmoRepasoJulio {
         System.out.println("El area del cuadrado es:"+restultArea);
         }
     
+    void calcularAreaTriangulo(){
+        System.out.println("Ingrese la Base del triangulo:");
+        double base=sc.nextDouble();
+        System.out.println("Ingrese la altura del triangulo:");
+        double altura=sc.nextDouble();
+        restultArea=(base*altura)/2;
+        System.out.println("El area del Triangulo es: "+restultArea);    
+    }
+    
+   void calcularAreaTrapacio(){
+        System.out.println("Ingrese Base Mayor del Trapecio:");
+        double baseMa=sc.nextDouble();
+        System.out.println("Ingrese Base Menor del Trapecio:");
+        double baseMe=sc.nextDouble();
+        System.out.println("Ingrese Altura del Trapecio:");
+        double altura=sc.nextDouble();
+        restultArea=((baseMa+baseMe)*altura)/2;
+        System.out.println("El area del Trapecio es: "+restultArea);     
+    }
+   
+   static void saludo(){
+       System.out.println("Hola Mundo");
+   }
+   
+    public void calcularAreaFiguraForm2(String tipoFigura){
+        //Estructura selecctiva multiple
+        switch(tipoFigura.toLowerCase()){
+        case "cuadrado":{ calcularAreaCuadro(); break;}
+        case "triangulo":{ calcularAreaTriangulo(); break;}
+        case "trapecio":{ calcularAreaTrapacio(); break;}
+        case "saludo":{ saludo(); break;}
+        default:{System.out.println("Figura no Encontrada!");}
+        }    
+    }    
     public void calcularAreaFigura(String tipoFigura){
         sc=new Scanner(System.in);
         if(tipoFigura.toLowerCase().equals("cuadrado")){
@@ -53,13 +87,30 @@ public class AlgoritmoRepasoJulio {
         double altura=sc.nextDouble();
         restultArea=((baseMa+baseMe)*altura)/2;
         System.out.println("El area del Trapecio es: "+restultArea);        
+        }else{
+            System.out.println("Figura no encontrada!!");
         }
-    }
-    
+    }    
     public static void main(String[] args){
         System.out.println("Hola Mundo");
+        String continuaSalir="Continuar";
         AlgoritmoRepasoJulio arj=new AlgoritmoRepasoJulio();
-        arj.calcularAreaCuadro();
+        //arj.calcularAreaCuadro();
+        
+        do{
+        arj.sc=new Scanner(System.in);
+        System.out.println("Ingrese un tipo de Figura:");
+        String figura=arj.sc.nextLine();
+        //arj.calcularAreaFigura(figura);
+        arj.calcularAreaFiguraForm2(figura);   
+        
+        System.out.println("Desea Continuar? ...Si desea salir coloque exit:");
+        arj.sc=new Scanner(System.in);
+        continuaSalir=arj.sc.nextLine();        
+        
+        }while(!continuaSalir.toLowerCase().equals("exit"));
+        
+       
     }
  
 }
