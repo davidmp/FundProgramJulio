@@ -44,6 +44,26 @@ def calcularAreaFigura(tipoFigura):
     else:
         print("Figura no encontrada!!")
 
+
+def imprimirTablaMultiplicar1a8():
+    for i in range(1, 9):
+        for j in range(1, 11):
+            print (i, "x", j, "=", i * j)
+        print ("\n")
+
 #calcularAreaCuadro()
-figura=input("Ingrese la Figura para calcular el area:")
-calcularAreaFiguraForm2(figura)
+opcion = "continuar"
+while (opcion != "exit"):
+    figura = input("Ingrese la Figura para calcular el area:")
+    if (figura.lower() == "cuadrado"):
+        calcularAreaCuadro()
+    elif (figura.lower() == "triangulo"):
+        calacularAreaTriangulo()
+    elif (figura.lower() == "trapecio"):
+        calcularAreaTrapecio()
+    else:
+        imprimirTablaMultiplicar1a8()
+        print("Figura no encontrada!!")
+
+    opcion = input("Desea continuar? si desea salir coloque exit:")
+# calcularAreaFiguraForm2(figura)
