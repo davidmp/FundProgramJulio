@@ -90,7 +90,8 @@ public class AlgoritmoRepasoJulio {
         }else{
             System.out.println("Figura no encontrada!!");
         }
-    }    
+    }  
+    
     public static void main(String[] args){
         System.out.println("Hola Mundo");
         String continuaSalir="Continuar";
