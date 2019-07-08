@@ -26,6 +26,12 @@ class AlgoritmosClaseRep(object):
         else:
             print("Figura no encontrada!!")
 
+    def imprimirTablaMultiplicar1a8(self):
+        for i in range(1, 9):
+            for j in range(1, 11):
+                print (i, "x", j, "=", i * j)
+            print ("\n")
+
     def main(self):
         obj = AlgoritmosClaseRep()
         opcion = "continuar"
@@ -38,11 +44,22 @@ class AlgoritmosClaseRep(object):
             elif (figura.lower() == "trapecio"):
                 obj.calcularAreaTrapecio()
             else:
-                obj.imprimirTablaMultiplicar1a8()
                 print("Figura no encontrada!!")
-
+                if (figura=="tablamul"):
+                    obj.imprimirTablaMultiplicar1a8()
+                elif (figura=="interes"):
+                    obj.calcularInteresFinAnho()
+                else:
+                    print ("No existe esa opcion")
             opcion = input("Desea continuar? si desea salir coloque exit:")
 
+    def calcularInteresFinAnho(self):
+        monto = float(input("Ingrese el monto Inicial a Invertir:"))
+        for i in range(1,13):
+            interes=monto*0.02
+            monto=monto+interes
+            print ("Al final del ", i, " mes el monto sera :", monto)
+        print ("El monto que la persona entra al final del año sera:",monto)
 
 if __name__ == '__main__':
     obj = AlgoritmosClaseRep()
