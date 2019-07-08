@@ -49,6 +49,8 @@ class AlgoritmosClaseRep(object):
                     obj.imprimirTablaMultiplicar1a8()
                 elif (figura=="interes"):
                     obj.calcularInteresFinAnho()
+                elif (figura=="totalventas"):
+                    obj.calularSumadeVentas()
                 else:
                     print ("No existe esa opcion")
             opcion = input("Desea continuar? si desea salir coloque exit:")
@@ -60,6 +62,16 @@ class AlgoritmosClaseRep(object):
             monto=monto+interes
             print ("Al final del ", i, " mes el monto sera :", monto)
         print ("El monto que la persona entra al final del año sera:",monto)
+
+    def calularSumadeVentas(self):
+        print ("Sistema de Ventas")
+        isClientes="si"
+        montoPagar=0
+        while(isClientes.lower()=="si"):
+            nombreCliente=input("Ingrese el nombre del Cliente:")
+            montoPagar=montoPagar+float(input("Ingrese el monto a Pagar:"))
+            isClientes=input("Hay Mas Clientes? SI/NO:")
+        print ("Se le Informa al Supervisor que se recaudo al final del día:", montoPagar)
 
 if __name__ == '__main__':
     obj = AlgoritmosClaseRep()
