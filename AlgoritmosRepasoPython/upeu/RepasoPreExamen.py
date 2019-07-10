@@ -58,9 +58,28 @@ class RepasoPreExmaen():
                     contador = 0
                     sumCreditos = 0
 
+    def calcularPeso(self):
+        pesoBascula, estadoPeso, diferenciaPeso=0, "", 0
+        for i in range(1,6):
+            pesoInit=float(input(f"Ingrese el Peso Inicial de Persona {i} :"))
+            for j in range(1, 11):
+                pesoReal=float(input(f"Ingrese el peso calculado de la Bascula {j} :"))
+                pesoBascula=pesoBascula+pesoReal
+                if(j==10):
+                    if(pesoBascula/j>pesoInit):
+                        estadoPeso="SUBIDO"
+                        diferenciaPeso=(pesoBascula/j)-pesoInit
+                    else:
+                        estadoPeso="BAJADO"
+                        diferenciaPeso = pesoInit-(pesoBascula / j)
+                    print ("Su peso es:", pesoBascula/j, " Ud. a:", estadoPeso, " en ", diferenciaPeso, " Kilos")
+            pesoBascula=0
+
 
 if __name__ == '__main__':
     obj=RepasoPreExmaen()
     #obj.resultadoCenso()
-    obj.calcularPromedioPonderado()
+    #obj.calcularPromedioPonderado()
+    obj.calcularPeso()
+
     print ("Hola mundo")
