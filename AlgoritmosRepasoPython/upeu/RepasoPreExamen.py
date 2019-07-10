@@ -75,11 +75,46 @@ class RepasoPreExmaen():
                     print ("Su peso es:", pesoBascula/j, " Ud. a:", estadoPeso, " en ", diferenciaPeso, " Kilos")
             pesoBascula=0
 
+    def transformada(self):
+        print("Transformada 01")
+        dimension=int(input("Ingrese la Dimension de la Matriz:"))
+        matriz = [[0] * dimension for i in range(dimension)]
+        numInic = int(input("Ingrese la el numero de Inicio:"))
+        for i in range(0, dimension):
+            for j in range(0, dimension):
+                if (j < dimension - i):
+                    matriz[i][j]=numInic+(i+j)*(i+j+1)/2+i
+                else:
+                    matriz[i][j]="  "
+        for i in range(0, dimension):
+            for j in range(0, dimension):
+                print(matriz[i][j], "\t", end='')
+            print("\n")
+
+    def transformada03(self):
+        print("Transformada N° 03")
+        dimension=int(input("Ingrese la Dimension de la Matriz:"))
+        matriz = [[0] * dimension for i in range(dimension)]
+        numInic = int(input("Ingrese la el numero de Inicio:"))
+        for i in range(0, dimension):
+            for j in range(0, dimension):
+                if (j < dimension - i):
+                    if((i+j)%2==0):
+                        matriz[i][j]=numInic+(i+j)*(i+j+1)/2+j
+                    else:
+                        matriz[i][j] = numInic + (i + j) * (i + j + 1) / 2 + i
+                else:
+                    matriz[i][j]="  "
+        for i in range(0, dimension):
+            for j in range(0, dimension):
+                print(matriz[i][j], "\t", end='')
+            print("\n")
 
 if __name__ == '__main__':
     obj=RepasoPreExmaen()
     #obj.resultadoCenso()
     #obj.calcularPromedioPonderado()
-    obj.calcularPeso()
+    #obj.calcularPeso()
+    obj.transformada03()
 
     print ("Hola mundo")
