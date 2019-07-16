@@ -55,8 +55,22 @@ class OrdenacionYBusqueda():
                 self.ordenacionSortBurbujaRecur(vector,posicion)
         return vector
 
+    def factorialRecur(self, numero):
+        if(numero<=1):
+            return 1
+        else:
+            return numero*self.factorialRecur(numero-1)
+
+    def fibonaciRecur(self, numero):
+        if(numero<0):
+            return -1
+        elif(numero==0):
+            return 0
+        elif numero==1:
+            return 1
+        else:
+            return self.fibonaciRecur(numero-1)+self.fibonaciRecur(numero-2)
+
 obj=OrdenacionYBusqueda()
-vector=[4,10,1,8,3]
-print("Antes:", vector)
-#print("Ordenado:",obj.insercionDirecta(vector))
-print("Ordenar Recursiva", obj.ordenacionSortBurbujaRecur(vector,0))
+print("Factorial:", obj.factorialRecur(5))
+print("Fibonaci:", obj.fibonaciRecur(6))
