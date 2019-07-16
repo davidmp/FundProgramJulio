@@ -71,6 +71,21 @@ class OrdenacionYBusqueda():
         else:
             return self.fibonaciRecur(numero-1)+self.fibonaciRecur(numero-2)
 
+    def busqueSecuencial(self,vector, valorB):
+        posicion=0
+        for i in range(0,len(vector)):
+            if vector[i]==valorB:
+                print("Existe el numero")
+                posicion=i
+                break
+            else:
+                if i==len(vector)-1:
+                    print("No existe")
+                    posicion = -1
+        return posicion
+
 obj=OrdenacionYBusqueda()
+vector=[2,8,1,10,12,14]
 print("Factorial:", obj.factorialRecur(5))
-print("Fibonaci:", obj.fibonaciRecur(6))
+print("Fibonaci:", obj.fibonaciRecur(5))
+print("buscar numero: ", obj.busqueSecuencial(vector,20))
