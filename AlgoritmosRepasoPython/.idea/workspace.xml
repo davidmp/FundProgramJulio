@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8d3600ac-b645-4973-a095-a2d6940fe1e4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/upeu/OrdenacionBusqueda.py" beforeDir="false" afterPath="$PROJECT_DIR$/upeu/OrdenacionBusqueda.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/upeu/Matriz.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,10 +14,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/upeu/OrdenacionBusqueda.py">
+        <entry file="file://$PROJECT_DIR$/upeu/Matriz.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="81" column="35" selection-start-line="81" selection-start-column="35" selection-end-line="81" selection-end-column="35" />
+            <state relative-caret-position="345">
+              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
             </state>
           </provider>
         </entry>
@@ -43,6 +44,7 @@
         <option value="$PROJECT_DIR$/upeu/AlgoritmosClase.py" />
         <option value="$PROJECT_DIR$/upeu/RepasoPreExamen.py" />
         <option value="$PROJECT_DIR$/upeu/OrdenacionBusqueda.py" />
+        <option value="$PROJECT_DIR$/upeu/Matriz.py" />
       </list>
     </option>
   </component>
@@ -93,7 +95,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.OrdenacionBusqueda">
+  <component name="RunManager" selected="Python.Matriz">
     <configuration name="AlgoritmosClase" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="AlgoritmosRepasoPython" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -115,27 +117,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="AlgoritmosRepClase" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="AlgoritmosRepasoPython" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="C:\Users\Software Student\PycharmProjects\Prueba\venv\Scripts\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/upeu" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/upeu/AlgoritmosRepClase.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="AlgoritmosRepaso" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="AlgoritmosRepasoPython" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -149,6 +130,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/upeu/AlgoritmosRepaso.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Matriz" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="AlgoritmosRepasoPython" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/upeu" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/upeu/Matriz.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -201,11 +203,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Matriz" />
         <item itemvalue="Python.OrdenacionBusqueda" />
         <item itemvalue="Python.RepasoPreExamen" />
         <item itemvalue="Python.AlgoritmosClase" />
         <item itemvalue="Python.AlgoritmosRepaso" />
-        <item itemvalue="Python.AlgoritmosRepClase" />
       </list>
     </recent_temporary>
   </component>
@@ -231,22 +233,22 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="792" height="687" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.0397878" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15331928" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.8342175" visible="true" weight="0.2400722" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.83350897" visible="true" weight="0.48320693" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49947312" weight="0.32936078" />
       <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.64278185" weight="0.15059589" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.1657825" side_tool="true" visible="true" weight="0.2400722" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.16649105" side_tool="true" visible="true" weight="0.48320693" />
       <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -293,8 +295,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/upeu/OrdenacionBusqueda.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="81" column="35" selection-start-line="81" selection-start-column="35" selection-end-line="81" selection-end-column="35" />
+        <state relative-caret-position="889">
+          <caret line="86" column="25" lean-forward="true" selection-start-line="86" selection-start-column="25" selection-end-line="86" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/upeu/Matriz.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
         </state>
       </provider>
     </entry>
