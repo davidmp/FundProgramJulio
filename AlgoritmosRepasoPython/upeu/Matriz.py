@@ -41,6 +41,29 @@ class OperacionMatrices():
             contadorX=0
         return M
 
+    def transformada30Caracol(self, dimension, numInicio):
+        M = [[0] * dimension for i in range(dimension)]
+        for c in range(0,int(dimension/2)):
+            for ld in range(c,dimension-c-1):
+                M[ld][dimension-1-c]=numInicio
+                numInicio=numInicio+1
+            li=dimension-1-c
+            while(li>c):
+                M[dimension - 1 - c][li] = numInicio
+                numInicio = numInicio + 1
+                li=li-1
+            liz=dimension-1-c
+            while(liz>c):
+                M[liz][c] = numInicio
+                numInicio = numInicio + 1
+                liz=liz-1
+            for ls in range(c,dimension-1-c):
+                M[c][ls] = numInicio
+                numInicio = numInicio + 1
+        if dimension%2!=0:
+            M[int(dimension/2)][int(dimension/2)]=numInicio
+        return M
+
     def imprimirMatriz(self, matriz):
         for x in range(0, len(matriz)):
             for y in range(0,len(matriz[0])):
@@ -53,4 +76,5 @@ dimension=int(input("Ingrese la dimesion de la Matriz:"))
 numInicio=int(input("Ingrese el numero de inicio:"))
 
 #obj.imprimirMatriz(obj.transformada04(dimension, numInicio))
-obj.imprimirMatriz(obj.transformada17(dimension, numInicio))
+#obj.imprimirMatriz(obj.transformada17(dimension, numInicio))
+obj.imprimirMatriz(obj.transformada30Caracol(dimension,numInicio))
