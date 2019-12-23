@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><omr-project blackThreshold="0" version="0.1" whiteThreshold="0">
+    <structure referenceSheet="upeumodelo.jpg">
+        <bubble-group bottomY="304" bubbleHeight="14" bubbleWidth="14" columns="10" indexOffset="0" leftX="124" rightX="306" rows="8" topY="179" type="student-number">
+            <answer-key>0000000000,0000000000,0000000000,0000000000,0000000000,0000000000,0000000000,0000000000</answer-key>
+        </bubble-group>
+        <bubble-group bottomY="269" bubbleHeight="14" bubbleWidth="14" columns="26" indexOffset="0" leftX="428" rightX="935" rows="1" topY="269" type="check-letter">
+            <answer-key>00000000000000000000000000</answer-key>
+        </bubble-group>
+        <bubble-group bottomY="716" bubbleHeight="14" bubbleWidth="14" columns="5" indexOffset="1" leftX="447" rightX="529" rows="20" topY="376" type="vertical">
+            <answer-key>10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000</answer-key>
+        </bubble-group>
+        <bubble-group bottomY="716" bubbleHeight="14" bubbleWidth="14" columns="5" indexOffset="21" leftX="589" rightX="671" rows="20" topY="376" type="vertical">
+            <answer-key>00000,00000,00000,00000,00000,00000,00000,00000,00000,00000,00000,00000,00000,00000,00000,00000,00000,00000,00000,00000</answer-key>
+        </bubble-group>
+        <bubble-group bottomY="715" bubbleHeight="14" bubbleWidth="14" columns="5" indexOffset="41" leftX="731" rightX="813" rows="20" topY="376" type="vertical">
+            <answer-key>00000,00000,00000,00000,00000,00000,00000,00000,00000,00000,00000,00000,00000,00000,00000,00000,00000,00000,00000,00000</answer-key>
+        </bubble-group>
+        <bubble-group bottomY="715" bubbleHeight="14" bubbleWidth="14" columns="5" indexOffset="61" leftX="873" rightX="955" rows="20" topY="375" type="vertical">
+            <answer-key>00000,00000,00000,00000,00000,00000,00000,00000,00000,00000,00000,00000,00000,00000,00000,00000,00000,00000,00000,00000</answer-key>
+        </bubble-group>
+    </structure>
+    <answers>
+        <sheet id="upeumodelo.jpg" page="0" rotation="0" src=".\upeuexamenreal\upeumodelo.jpg"/>
+    </answers>
+</omr-project>

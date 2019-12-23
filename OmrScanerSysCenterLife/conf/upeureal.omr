@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<omr-project blackThreshold="147" version="0.1" whiteThreshold="188">
+    <structure referenceSheet="upeumodelo.jpg">
+        <bubble-group bottomY="982" bubbleHeight="23" bubbleWidth="23"
+            columns="10" indexOffset="0" leftX="714" rightX="1302"
+            rows="2" topY="858" type="check-letter">
+            <answer-key>0000000000,0000000000</answer-key>
+        </bubble-group>
+        <bubble-group bottomY="725" bubbleHeight="23" bubbleWidth="23"
+            columns="10" indexOffset="1" leftX="717" rightX="1305"
+            rows="5" topY="443" type="student-number">
+            <answer-key>0000000000,0000000000,0000000000,0000000000,0000000000</answer-key>
+        </bubble-group>
+        <bubble-group bottomY="2091" bubbleHeight="23" bubbleWidth="23"
+            columns="4" indexOffset="1" leftX="314" rightX="512"
+            rows="13" topY="1245" type="vertical">
+            <answer-key>1000,1000,1000,1000,1000,1000,1000,1000,1000,1000,1000,1000,1000</answer-key>
+        </bubble-group>
+        <bubble-group bottomY="2089" bubbleHeight="23" bubbleWidth="23"
+            columns="4" indexOffset="14" leftX="708" rightX="908"
+            rows="13" topY="1243" type="vertical">
+            <answer-key>1000,1000,1000,1000,1000,1000,1000,1000,1000,1000,1000,1000,1000</answer-key>
+        </bubble-group>
+        <bubble-group bottomY="2159" bubbleHeight="23" bubbleWidth="23"
+            columns="4" indexOffset="27" leftX="1103" rightX="1298"
+            rows="14" topY="1243" type="vertical">
+            <answer-key>1000,1000,1000,1000,1000,1000,1000,1000,1000,1000,1000,1000,1000,1000</answer-key>
+        </bubble-group>
+        <registration-marker height="32" searchRadius="16" width="32"
+            x="185" y="89"/>
+        <registration-marker height="32" searchRadius="16" width="32"
+            x="1440" y="2196"/>
+    </structure>
+    <answers>
+        <sheet id="upeumodelo.jpg" page="0" rotation="0" src=".\testdata\upeumodelo.jpg"/>
+    </answers>
+</omr-project>

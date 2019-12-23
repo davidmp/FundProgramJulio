@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<omr-project blackThreshold="0" version="0.1" whiteThreshold="0">
+    <structure referenceSheet="Answer.jpg">
+        <bubble-group bottomY="1244" bubbleHeight="40" bubbleWidth="40"
+            columns="10" indexOffset="0" leftX="220" rightX="756"
+            rows="10" topY="704" type="student-number">
+            <answer-key>0000000000,0000000000,0000000000,0000000000,0000000000,0000000000,0000000000,0000000000,0000000000,0000000000</answer-key>
+        </bubble-group>
+        <bubble-group bottomY="1944" bubbleHeight="40" bubbleWidth="40"
+            columns="4" indexOffset="0" leftX="328" rightX="516"
+            rows="5" topY="1468" type="vertical">
+            <answer-key>1000,0010,0100,0001,1000</answer-key>
+        </bubble-group>
+        <bubble-group bottomY="2640" bubbleHeight="40" bubbleWidth="40"
+            columns="4" indexOffset="5" leftX="324" rightX="508"
+            rows="5" topY="2172" type="vertical">
+            <answer-key>0000,0000,0000,0000,0000</answer-key>
+        </bubble-group>
+        <registration-marker height="32" searchRadius="16" width="32"
+            x="116" y="242"/>
+        <registration-marker height="32" searchRadius="16" width="32"
+            x="2306" y="3242"/>
+    </structure>
+    <answers>
+        <sheet id="Answer.jpg" page="0" rotation="0" src=".\demo\Answer.jpg"/>
+    </answers>
+</omr-project>
